@@ -1,0 +1,1 @@
+# TODO: tests for marking books as favorites
