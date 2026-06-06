@@ -2,7 +2,7 @@ from .favoriteBooks import FavoriteBooks
 
 class BookStore:
 
-    # Initializes the FavoriteBooks class to be able to insert books onto the list of favorites and use those functions 
+    # Initializes with the FavoriteBooks class to be able to insert books onto the list of favorites and use its add/remove functions for toggle_favorite 
 
     def __init__(self, favorite_books: FavoriteBooks):
         self.favorite_books = favorite_books
@@ -18,7 +18,7 @@ class BookStore:
         new_book_id = max(book["id"] for book in self.books) + 1
         self.books.append({"id": new_book_id, "author": author, "title": title})
 
-    # Looks for the book with the given ID, then 
+    # Looks for the book with the given ID, then toggles it to add or remove to the list of favorite books 
     def toggle_favorite(self, book_id):
         new_favorite_book = None
         for book in self.books:

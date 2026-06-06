@@ -1,7 +1,7 @@
 <!-- 1: Vad är skillnaden mellan enhetstest, integrationstest, regressionstest och prestandatest? -->
 
 Enhetstest testar en funktion eller metod åt gången för att se om en feature funkar i grunden.
-Integrationstest testar flera funktioner eller metoder i kombination. Detta hjälper till att visa om någonting går sönder när flera faktorer är inblandade, och simulerar buggar som kan dyka upp i naturligt användarbeteende (t.ex. att använda flera features på en webbsajt).
+Integrationstest testar flera funktioner eller metoder i kombination. Detta hjälper till att visa om någonting går sönder när flera faktorer är inblandade, och simulerar buggar som kan dyka upp från naturligt användarbeteende (t.ex. att använda flera features efter varandra på en app eller webbsajt).
 Regressionstest testar för om funktioner som tidigare fungerade fortfarande funkar, i och med att nyintroducerade funktioner kan leda till nya fel eller återintroducera gamla fel. Enhetstest blir naturligt till regressionstest i takt med att utveckling fortgår.
 Prestandatest testar inte bara för ifall en funktion funkar, utan för hur snabb eller effektiv en funktion är i sin implementation. Med prestandatest kan en utvecklare testa flera olika upplägg för en metod för att se vilken som är snabbast.
 
