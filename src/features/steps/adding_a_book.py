@@ -62,8 +62,12 @@ def step_impl(context):
 @when(u"the user presses the 'favorite' button on a book in the database")
 def step_impl(context):
     context.first_book = context.page.get_by_text(", Guido van Rossum")
+    context.heart = context.page.get_by_test_id("star-Ormar på ett plan: En Python-berättelse")
     context.first_book.hover(timeout=1000)
-    context.page.get_by_test_id("star-Ormar på ett plan: En Python-berättelse").click(timeout=500)
+    context.heart.wait_for(state = "visible", timeout=3000)
+    # doubling up on timeout redundancy due to the little pulsing heart animation on hover
+    context.heart.hover(timeout=500)
+    context.heart.click(timeout=500)
 
 @then(u"that book should be added to the user's favorites list")
 def step_impl(context):
