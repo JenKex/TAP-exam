@@ -1,6 +1,5 @@
 name: Python CI/CD
 
-# Talar om när jobben ska köras. Denna inställning bevakar när man gör push eller pull request mot branchen "main".
 on:
   push:
     branches: [ "main" ]
