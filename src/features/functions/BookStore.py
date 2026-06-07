@@ -8,7 +8,7 @@ class BookStore:
         self.favorite_books = favorite_books
         self.books = [	{ "id": 100, "title": "Ormar på ett plan: En Python-berättelse", "author": "Guido van Rossum" },
 	{ "id": 101, "title": "The Pragmatic Procrastinator", "author": "Dave Thomasson" },
-	{ "id": 102, "title": "Python för folk som hatar ormar", "author": "Monty Pythonsson" },]
+	{ "id": 102, "title": "Python för folk som hatar ormar", "author": "Monty Pythonsson" }]
 
     def get_books(self):
         return self.books

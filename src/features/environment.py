@@ -1,4 +1,3 @@
-from behave import fixture, use_fixture
 from playwright.sync_api import sync_playwright
 
 def before_all(context):
