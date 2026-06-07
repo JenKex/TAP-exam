@@ -26,4 +26,4 @@ jobs:
         continue-on-error: true
       - name: Run tests with pytest
         run: |
-          pytest --maxfail=1 --disable-warnings -q
+          python -m pytest --maxfail=1 --disable-warnings -q
