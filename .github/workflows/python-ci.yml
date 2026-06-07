@@ -12,6 +12,14 @@ jobs:
     env:
       PYTHONPATH: ${{ github.workspace }}
     steps:
+      - name: Debug paths
+        run: |
+          echo "workspace: ${{ github.workspace }}"
+          echo "PYTHONPATH: $PYTHONPATH"
+          pwd
+          ls -la
+          ls -la src/
+          python -c "import sys; print('\n'.join(sys.path))"
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Set up Python
