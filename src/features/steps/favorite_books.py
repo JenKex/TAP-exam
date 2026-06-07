@@ -17,8 +17,8 @@ def step_impl(context):
     context.first_book.hover(timeout=1000)
     context.heart.wait_for(state = "visible", timeout=3000)
     # doubling up on timeout redundancy due to the little pulsing heart animation on hover
-    context.heart.hover(timeout=500)
-    context.heart.click(timeout=500)
+    context.heart.hover(timeout=1000)
+    context.heart.click(timeout=1000)
 
 @then(u"that book should be added to the user's favorites list")
 def step_impl(context):
