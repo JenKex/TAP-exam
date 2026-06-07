@@ -23,7 +23,7 @@ jobs:
       - name: Lint code with flake8
         run: |
           flake8 src tests
-          continue-on-error: true
+        continue-on-error: true
       - name: Run tests with pytest
         run: |
           pytest --maxfail=1 --disable-warnings -q
