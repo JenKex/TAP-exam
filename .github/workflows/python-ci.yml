@@ -9,6 +9,8 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: ${{ github.workspace }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,4 +28,4 @@ jobs:
         continue-on-error: true
       - name: Run tests with pytest
         run: |
-          python -m pytest --maxfail=1 --disable-warnings -q
+          pytest --maxfail=1 --disable-warnings -q
