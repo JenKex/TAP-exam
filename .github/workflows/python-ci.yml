@@ -29,6 +29,8 @@ jobs:
           pwd
           ls -la
           ls -la src/
+          ls -la src/features/
+          ls -la src/features/functions/
           python -c "import sys; print('\n'.join(sys.path))"
       - name: Lint code with flake8
         run: |
